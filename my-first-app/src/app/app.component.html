@@ -5,10 +5,19 @@
 <!-- <app-servers></app-servers> -->
 
 <!-- <button class="btn btn-primary" (click)="showSecret=! showSecret">Display Details</button> -->
-
+<!--
 <button class="btn btn-primary" (click)="onToggleDetails()">Display Details</button>
 
 <p *ngIf="showSecret">Secret Password = tuna</p>
 <div *ngFor="let logItem of log; let i= index"
 [ngStyle]="{backgroundColor: logItem >=5?'blue':'transparent'}"
-[ngClass]="{'white-text': i >= 5}"> {{logItem}} </div>
+[ngClass]="{'white-text': i >= 5}"> {{logItem}} </div> -->
+<app-header></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-recipes></app-recipes>
+      <app-shopping-list></app-shopping-list>
+    </div>
+  </div>
+</div>
